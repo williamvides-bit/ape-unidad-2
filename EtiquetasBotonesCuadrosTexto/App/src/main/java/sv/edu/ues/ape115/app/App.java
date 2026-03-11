@@ -16,6 +16,10 @@ public class App {
         JLabel etiqueta = new JLabel("Nombre:");
         JTextField campo = new JTextField(15);
         JButton boton = new JButton("Saludar");
+        boton.addActionListener(e -> {
+            String nombre = campo.getText();
+            JOptionPane.showMessageDialog(null, "Hola " + nombre);
+        });
 
         JPanel panel = new JPanel();
 
