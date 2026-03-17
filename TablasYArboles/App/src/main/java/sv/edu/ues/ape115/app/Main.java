@@ -27,14 +27,6 @@ public class Main extends JFrame {
         modelo = new DefaultTableModel(columnas, 0);
         tabla = new JTable(modelo);
         
-        DefaultMutableTreeNode raiz = new DefaultMutableTreeNode("Sistema");
-        DefaultMutableTreeNode doc = new DefaultMutableTreeNode("Documentos");
-        DefaultMutableTreeNode img = new DefaultMutableTreeNode("Imágenes");
-        
-        raiz.add(doc);
-        raiz.add(img);
-        JTree arbol = new JTree(raiz);
-
         add(new JScrollPane(tabla));
         //add(arbol);
         setLocationRelativeTo(null);
